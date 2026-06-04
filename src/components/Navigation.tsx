@@ -9,8 +9,8 @@ export function Navigation(){
 
     return(
         <nav className='text-white 
-        w-full bg-gray-400/300
-          md:bg-slate-500'>
+        w-full bg-gray-400
+          md:bg-gray-500/20'>
           <div className='max-w-7xl mx-auto 
           px-4 sm:px-6 lg:px-8
           '>
