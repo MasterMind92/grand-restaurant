@@ -7,8 +7,8 @@ type params = {
 export function Encart({children}:params){
     return(
         <>
-            <div className="wrapper">
-                <div className="container py-10 h-full">
+            <div className="wrapper py-10 h-full">
+                <div className="">
                     {children}
                 </div>
             </div>
