@@ -14,7 +14,7 @@ export function Header(){
 
         <Encart>
           <div className="flex flex-row justify-center py-30">
-            <div className="mx-auto w-1/3">
+            <div className="mx-auto md:w-3/4 lg:w-1/2 px-10">
                 <div className="text-2xl text-amber-800 font-bold py-2">Sous-titre</div>
                 <div className="text-6xl text-white py-2 font-bold">Grand titre</div>
                 <p className="text-lg text-white py-2">

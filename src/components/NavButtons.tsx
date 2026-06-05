@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 
 
 export default function NavButtons(){
@@ -6,9 +8,18 @@ export default function NavButtons(){
 
     return (
       <>
+      <Link to="/accueil">
         <button className={buttonClasses}>Accueil</button>
+      </Link>
+      <Link to="/a-propos">
         <button className={buttonClasses}>A Propos</button>
+      </Link>
+      <Link to="/contact">
         <button className={buttonClasses}>Contact</button>
+      </Link>
+        
+        
+        
       </>
     )
 }

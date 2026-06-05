@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { Link } from 'react-router-dom';
 
 
 export default function SocialButtons(){
@@ -8,9 +9,15 @@ export default function SocialButtons(){
 
     return (
       <>
-        <button className={buttonClasses}>  <FontAwesomeIcon icon={faFacebook}/></button>
-        <button className={buttonClasses}> <FontAwesomeIcon icon={faInstagram}/> </button>
-        <button className={buttonClasses}> <FontAwesomeIcon icon={faWhatsapp}/> </button>
+        <Link to="http://facebook.com">
+            <button className={buttonClasses}>  <FontAwesomeIcon icon={faFacebook}/></button>
+        </Link>
+        <Link to="http://instagram.com">
+            <button className={buttonClasses}> <FontAwesomeIcon icon={faInstagram}/> </button>
+        </Link>
+        <Link to="http://whatsapp.com">
+            <button className={buttonClasses}> <FontAwesomeIcon icon={faWhatsapp}/> </button>
+        </Link>
       </>
     )
 }
