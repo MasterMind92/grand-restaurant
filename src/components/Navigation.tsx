@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import NavButtons from "./NavButtons"
-import SocialLink from './socialLink';
+import SocialLink from './SocialLink';
 import { faFacebook, faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 
