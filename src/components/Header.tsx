@@ -1,6 +1,5 @@
 import { Navigation } from './Navigation'
 import { Encart } from '../Layouts/Encart'
-import { Link } from 'react-router-dom';
 import { Button } from './Button';
 
 
