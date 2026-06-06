@@ -1,35 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
 @import "tailwindcss";
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: fit-content;
+  font-size: 40px;
+  font-family: system-ui,sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #0000;
+  -webkit-text-stroke: 1px #000;
+  background:
+    radial-gradient(0.71em at 50% 1em,#000 99%,#0000 101%) calc(50% - 1em) 1em/2em 200% repeat-x text,
+    radial-gradient(0.71em at 50% -0.5em,#0000 99%,#000 101%) 50% 1.5em/2em 200% repeat-x text;
+  animation: 
+    l10-0 .8s linear infinite alternate,
+    l10-1  4s linear infinite;
+}
+.loader:before {
+  content: "Loading";
+}
+@keyframes l10-0 {
+  to {background-position-x: 50%,calc(50% + 1em)}
+}
+@keyframes l10-1 {
+  to {background-position-y: -.5em,0}
+}
 
 body{
     background-color: #0b1517;
-}
-
-.oswald-200 {
-  font-family: "Oswald", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 200;
-  font-style: normal;
-}
-.oswald-400 {
-  font-family: "Oswald", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.oswald-500 {
-  font-family: "Oswald", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.oswald-700 {
-  font-family: "Oswald", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 .counter {

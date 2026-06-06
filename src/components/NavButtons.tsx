@@ -4,21 +4,19 @@ import { Link } from "react-router-dom";
 
 export default function NavButtons(){
 
-    const buttonClasses = " px-8 text-white font-bold text-lg font-bold px-2 py-1 hover:bg-gray-500 transition duration-300";
+    const buttonClasses = " px-8 text-white font-extrabold text-lg font-extrabold px-2 hover:bg-[#a27438]  py-1 transition duration-300";
 
     return (
       <>
-      <Link to="/accueil">
-        <button className={buttonClasses}>Accueil</button>
+      <Link to="/accueil" className={buttonClasses}>
+        Accueil
       </Link>
-      <Link to="/a-propos">
-        <button className={buttonClasses}>A Propos</button>
+      <Link to="/a-propos" className={buttonClasses}>
+        A Propos
       </Link>
-      <Link to="/contact">
-        <button className={buttonClasses}>Contact</button>
+      <Link to="/contact" className={buttonClasses}>
+        Contact
       </Link>
-        
-        
         
       </>
     )

@@ -1,65 +1,35 @@
+import { Link } from "react-router-dom";
+import SocialLink from "../components/socialLink";
+import { faFacebook, faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+
 export function Footer(){
     return (
-        <footer id="footer">
-        <div className="p-6 bg-teal-500">
-            <div className="mx-auto flex justify-center">
-                <div 
-                  className="text-white font-medium
-                    text-3xl mr-4">
-                  Abonnez-vous a notre newsletter
+        <footer className="py-15 w-full">
+            <div className="flex flex-col md:flex-row justify-center flex-wrap">
+                <div className="w-full md:w-1/3 flex justify-center items-center">
+                    <div className="">
+                        LOGO
+                    </div>
                 </div>
-                <div>
-                  <input 
-                    type="text" 
-                    className="border rounded-1xl p-3 bg-white" 
-                    placeholder="Entrez votre adresse Emails"
-                  />
-                  <button 
-                  className="p-3 bg-white 
-                  text-teal-500 font-medium 
-                  hover:bg-teal-700
-                  hover:text-white"> 
-                    Valider
-                  </button>
-
+                <div className="w-full md:w-1/3 md:border-l-2 md:border-r-2 lg:border-[#ca9c5e] py-8 md:py-0">
+                    <Link to="#Carte" className="text-white text-3xl font-extrabold mb-4 block">Notre Menu</Link>
+                    <Link to="#" className="text-white text-3xl font-extrabold mb-4 block">Reservation</Link>
+                    <Link to="#" className="text-white text-3xl font-extrabold mb-4 block">A Propos</Link>
+                    <Link to="#" className="text-white text-3xl font-extrabold mb-4 block">Contactez nous</Link>
+                </div>
+                <div className="w-full md:w-1/3 flex justify-center items-center px-8">
+                    <div>
+                        <div className="py-4">
+                            <SocialLink colored={true} link="http://facebook.com" icon={faFacebook} />
+                            <SocialLink colored={true} link="http://instagram.com" icon={faInstagram} />
+                            <SocialLink colored={true} link="http://whatsapp.com" icon={faWhatsapp} />
+                        </div>
+                        <div className="font-light text-white">
+                            @Copyright MAD DEV Tous droits reservés
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div className="p-6 bg-black flex justify-center">
-            <div className="p-4">
-                <div className="text-4xl font-medium text-white">Logo</div>
-            </div>
-            <div className="p-4">
-                <h3 className="text-3xl">Bonjour</h3>
-                <ul className="list-none text-left">
-                    <li>bonjour</li>
-                    <li>bonjour</li>
-                    <li>bonjour</li>
-                </ul>
-            </div>
-            <div className="p-4">
-                <h3 className="text-3xl">Bonjour</h3>
-
-                <ul className="list-none text-left">
-                    <li>bonjour</li>
-                    <li>bonjour</li>
-                    <li>bonjour</li>
-                </ul>
-            </div>
-            <div className="p-4">
-                <h3 className="text-3xl">Bonjour</h3>
-
-                <ul className="list-none text-left">
-                    <li>bonjour</li>
-                    <li>bonjour</li>
-                    <li>bonjour</li>
-                </ul>
-            </div>
-
-        </div>
-        <div className="p-6 bg-teal-500">
-
-        </div>
-      </footer>
+        </footer>
     );
 }
