@@ -9,7 +9,7 @@ export function Header(){
         <header 
       id='header-wrapper'
       className="w-full 
-      bg-[url('img/image-5-darken.png')]
+      bg-[url('/img/image-5-darken.png')]
       bg-cover bg-center
       border-12 border-[#ca9c5e]
       "
