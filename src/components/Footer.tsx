@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { faFacebook, faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-import SocialLink from "./socialLink"; 
+import SocialLink from "./SocialLink"; 
 
 
 export function Footer(){
