@@ -25,7 +25,7 @@ export default function Accueil(){
                 </div>
             </Encart>
             <div className="py-8 lg:py-24"></div>
-            <Encart>
+            {/* <Encart>
                 <div className="flex flex-col md:flex-row justify-center px-10">
                 <div className="lg:w-2/3 xl:w-1/3 pb-8">
                     <CallToAction soustitre="Y'a porc au four" titre='NOTRE CHEF RECOMMANDE' text="Lorem ipsum dolor sit amet consectetur" btnlib="VOIR MENU" btnlink="#"/>
@@ -35,7 +35,7 @@ export default function Accueil(){
                     IMG TRANSPARENTE FLOTTANTE
                 </div>
                 </div>
-            </Encart>
+            </Encart> */}
             <div className="py-8 lg:py-24"></div>
             <Encart>
                     <div className="text-white text-lg font-extrabold"> Faites la cuisine pas la guerre</div>
