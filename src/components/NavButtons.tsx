@@ -11,7 +11,7 @@ export default function NavButtons(){
       <Link to="/accueil" className={buttonClasses}>
         Accueil
       </Link>
-      <Link to="/a-propos" className={buttonClasses}>
+      <Link to="/apropos" className={buttonClasses}>
         A Propos
       </Link>
       <Link to="/contact" className={buttonClasses}>

@@ -1,8 +1,8 @@
 
 import './App.css'
-import { Header } from './components/Header'
 import { BrowserRouter,Route, Routes } from 'react-router-dom'
 import Accueil from './Pages/Accueil'
+import Apropos from './Pages/Apropos'
 
 
 function App() {
@@ -11,12 +11,12 @@ function App() {
   return (
     <>
         <BrowserRouter>
-        <Header />
+        
             {/* Routes */}
         <Routes>
             <Route path="/" element={<Accueil />} />
             <Route path="/accueil" element={<Accueil />} />
-            {/* <Route path="/products" element={}> */}
+            <Route path="/apropos" element={<Apropos />} />
         </Routes>
         </BrowserRouter>
         

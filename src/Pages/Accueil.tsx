@@ -1,14 +1,15 @@
 import CallToAction from "../components/CallToAction";
 import { Footer } from "../components/Footer";
+import { Header } from "../components/Header";
 import { Plat } from "../components/Plat";
 import { Encart } from "../Layouts/Encart";
-
 
 
 export default function Accueil(){
 
     return (
         <>  
+            <Header image="/img/image-5-darken.png" />
             <div className="py-8 lg:py-10"></div>
             <Encart>
                 <div className="flex flex-col md:flex-row justify-center xl:justify-start px-8">
@@ -43,9 +44,23 @@ export default function Accueil(){
                     
                     <div className="flex  flex-col items-center xl:flex-row xl:justify-center px-2 gap-4 lg:gap-16 lg:py-8">
                         <div className="w-3/4   xl:w-1/3 ">
-                            <Plat titre='ATTIEKE POISSON DE LA TANTIE' libelle='Attieke Poisson' prix='2500' ingredient={['Attieke','Poisson Fume','Piment']}/>
-                            <Plat titre='' libelle='Attieke Poisson' prix='2500' ingredient={['Attieke','Poisson Fume','Piment']} highlight="Nouveau"/>
-                            <Plat titre='' libelle='Attieke Poisson' prix='2500' ingredient={['Attieke','Poisson Fume','Piment']}/>
+                            <Plat 
+                            titre='Nos Plats à Partager' 
+                            libelle='Grilladass Grando' 
+                            prix='12 000' 
+                            ingredient={['2 brochettes de bœuf','2 brochettes d’escargots','2 pilons de poulet']}
+                            />
+                            <Plat 
+                            titre='' 
+                            libelle='Grilladass Normal' 
+                            prix='8 500' 
+                            ingredient={['Attieke','Poisson Fume','Piment']} 
+                            highlight="Nouveau"/>
+                            <Plat 
+                            titre='' 
+                            libelle='Attieke Poisson' 
+                            prix='2500' 
+                            ingredient={['Attieke','Poisson Fume','Piment']}/>
                         </div>
                         <div className="w-3/4   xl:w-1/3 ">
                             <Plat titre='ATTIEKE POISSON DE LA TANTIE' libelle='Attieke Poisson' prix='2500' ingredient={['Attieke','Poisson Fume','Piment']}/>
