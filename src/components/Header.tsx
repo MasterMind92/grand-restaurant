@@ -14,12 +14,12 @@ export function Header({image}:image){
     return (
         <header 
       id='header-wrapper'
-      className={`w-full 
-      bg-[url('${image}')]
+      className="w-full 
+      bg-[url('/img/image-5-darken.png')]
       bg-cover bg-center
       border-12 border-[#ca9c5e]
       h-lvh
-      `}
+      "
       >
         <Navigation/>
 
