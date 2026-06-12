@@ -9,7 +9,7 @@ export default function Accueil(){
 
     return (
         <>  
-            <Header image="/img/image-2-darken.png" />
+            <Header />
             <div className="py-8 lg:py-10"></div>
             <Encart>
                 <div className="flex flex-col md:flex-row justify-center xl:justify-start px-8">

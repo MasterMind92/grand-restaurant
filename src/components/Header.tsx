@@ -2,13 +2,11 @@ import { Navigation } from './Navigation'
 import { Encart } from '../Layouts/Encart'
 import CallToAction from './CallToAction';
 
-type image = {
-  image:string
-}
 
 
 
-export function Header({image}:image){
+
+export function Header(){
     // 
     return (
         <header 
