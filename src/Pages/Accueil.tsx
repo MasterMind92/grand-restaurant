@@ -48,7 +48,11 @@ export default function Accueil(){
                             titre='Nos Plats à Partager' 
                             libelle='Grilladass Grando' 
                             prix='12 000' 
-                            ingredient={['2 brochettes de bœuf','2 brochettes d’escargots','2 pilons de poulet']}
+                            ingredient={[
+                                '2 brochettes de bœuf',
+                                '2 brochettes d’escargots',
+                                '2 pilons de poulet'
+                            ]}
                             />
                             <Plat 
                             titre='' 

@@ -21,7 +21,7 @@ export default function CallToAction({soustitre,titre,text,btnlib ,btnlink}:para
             <div className="text-white text-2xl py-4 mb-6">
                 {text}
              </div>
-            <Button text={btnlib} link={btnlink}/>
+            <Button text={btnlib} align="center" link={btnlink}/>
         </>
     );
 

@@ -24,7 +24,7 @@ export function Header({image}:image){
         <Navigation/>
 
         <Encart>
-          <div className="flex flex-row justify-center py-30">
+          <div className="flex flex-row justify-center py-10">
             <div className="mx-auto md:w-3/4 lg:w-1/2 px-10">
 
               <CallToAction 

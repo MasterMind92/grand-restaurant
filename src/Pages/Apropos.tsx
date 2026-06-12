@@ -1,3 +1,4 @@
+import { Button } from "../components/Button";
 import CallToAction from "../components/CallToAction";
 import { Card } from "../components/Card";
 import { Footer } from "../components/Footer";
@@ -32,7 +33,38 @@ export default function Apropos(){
                 </div>
 
             </div>
-            <div className="py-8 lg:py-10"></div>
+
+            <div className="py-4 lg:py-8"></div>
+            <Encart>
+                <div className="text-center text-white">
+                    <h4 className="text-2xl">Sous titre</h4>
+                    <div className="text-6xl p-2 pb-8">Grand Titre</div>
+                </div>
+                <div className="flex flex-col md:flex-row gap-8 p-4 justify-center">
+                    <div className=" w-full md:w-1/3">
+                        <img src="/img/restau-01.jpeg" alt="" />
+                    </div>
+                    <div className="text-2xl text-white text-left w-full md:w-1/3">
+                        
+                        <p className="py-2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ducimus exercitationem, laboriosam voluptatem in eaque, non quisquam veritatis optio quas nemo molestias totam eos laudantium!
+                        </p>
+                    </div>
+
+                </div>
+            </Encart>
+            <div className="py-8 lg:py-4"></div>
+
+            <Encart>
+                <div id="parallax" className="bg-[url(/img/image-2-darken.png)]  bg-center bg-cover bg-fixed py-30 flex justify-center">
+                    <div className="w-5/6 flex justify-center xl:justify-end">
+                        <div className="w-1/2 ">
+                            <CallToAction soustitre="La spécialité du chef" titre="LE STEAK A POINT" text="Normal que ce soit sa specialite c'est ce qu'il aime manger le plus" btnlib="Commander" btnlink="#"/>
+                        </div>
+                    </div>
+                </div>
+            </Encart>
+            <div className="py-8 lg:py-4"></div>
             <Encart>
                 <div className="py-4">
                     {/* <h1 className="text-white text-2xl font-bold">A LA UNE</h1> */}
@@ -53,15 +85,7 @@ export default function Apropos(){
                 </div>
             </Encart>
             <div className="py-8 lg:py-10"></div>
-            <Encart>
-                <div id="parallax" className="bg-[url(/img/image-2-darken.png)]  bg-center bg-cover bg-fixed py-30 flex justify-center">
-                    <div className="w-5/6 flex justify-center xl:justify-end">
-                        <div className="w-1/2 ">
-                            <CallToAction soustitre="La spécialité du chef" titre="LE STEAK A POINT" text="Normal que ce soit sa specialite c'est ce qu'il aime manger le plus" btnlib="Commander" btnlink="#"/>
-                        </div>
-                    </div>
-                </div>
-            </Encart>
+            
             
             <Encart>
                 <Footer />
