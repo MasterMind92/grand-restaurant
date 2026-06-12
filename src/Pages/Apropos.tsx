@@ -1,8 +1,7 @@
-import { Button } from "../components/Button";
+
 import CallToAction from "../components/CallToAction";
 import { Card } from "../components/Card";
 import { Footer } from "../components/Footer";
-import NavButtons from "../components/NavButtons";
 import { Navigation } from "../components/Navigation";
 import { Encart } from "../Layouts/Encart";
 

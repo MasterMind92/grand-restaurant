@@ -1,6 +1,5 @@
 import { Navigation } from './Navigation'
 import { Encart } from '../Layouts/Encart'
-import { Button } from './Button';
 import CallToAction from './CallToAction';
 
 type image = {
