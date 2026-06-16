@@ -21,8 +21,8 @@ export default function ContactForm() {
         },
     });
 
-    const onSubmit = async (data) => {
-        console.log(data);
+    const onSubmit = async () => {
+        // console.log(data);
 
         // Appel API ici
 
