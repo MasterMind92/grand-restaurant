@@ -3,6 +3,32 @@ import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import { Plat } from "../components/Plat";
 import { Encart } from "../Layouts/Encart";
+import Masonry from "../component/Masonry";
+
+const items = [
+    {
+      id: "1",
+      img: "https://picsum.photos/id/1015/600/900?grayscale",
+      url: "https://example.com/one",
+      height: 400,
+    },
+    {
+      id: "2",
+      img: "https://picsum.photos/id/1011/600/750?grayscale",
+      url: "https://example.com/two",
+      height: 250,
+    },
+    {
+      id: "3",
+      img: "https://picsum.photos/id/1020/600/800?grayscale",
+      url: "https://example.com/three",
+      height: 600,
+    },
+    // ... more items
+];
+
+
+
 
 
 export default function Accueil(){
@@ -84,32 +110,25 @@ export default function Accueil(){
                 </div>
             </Encart>
                 <div className="py-10"></div>
-            {/* <Encart>
+            <Encart>
                     <div className="text-white text-lg font-extrabold"> Faites la cuisine pas la guerre</div>
                     <h1 className='text-white text-6xl font-extrabold '>NOTRE GALERIE</h1>
+                    
+                    {/* <div className="py-80">
+                        <Masonry
+                        items={items}
+                        ease="power3.out"
+                        duration={1.2}
+                        stagger={0.05}
+                        animateFrom="bottom"
+                        scaleOnHover
+                        hoverScale={0.95}
+                        blurToFocus
+                        colorShiftOnHover={false}
+                        />
+                    </div> */}
 
-                    <div className="grid xl:grid-cols-3 md:grid-cols-2 xl:grid-row-2 md:grid-row-3 gap-8 p-8">
-                        <div className="">
-                            <img src="/img/image-1.jpg" alt="" />
-                        </div>
-                        <div className="">
-                            <img src="/img/image-2.jpg" alt="" />
-                        </div>
-                        <div className="">
-                            <img src="/img/image-4.jpg" alt="" />
-                        </div>
-                        <div className="">
-                            <img src="/img/image-3.jpg" alt="" />
-                        </div>
-                        <div className="">
-                            <img src="/img/image-5.jpg" alt="" />
-                        </div>
-                        <div className="">
-                            <img src="/img/image-2.jpg" alt="" />
-                        </div>
-                    </div>
-
-            </Encart> */}
+            </Encart>
             
             <Encart>
                 <Footer />

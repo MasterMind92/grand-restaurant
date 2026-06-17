@@ -3,7 +3,7 @@ import ContactForm from "../components/ContactForm";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import { Encart } from "../Layouts/Encart";
-
+import { Phone, Mail } from 'lucide-react';
 
 export default function Contact(){
 
@@ -12,38 +12,61 @@ export default function Contact(){
             <Header />
 
             <Encart>
-                <div className=" grid grid-cols-2 grid-rows-2 gap-5 p-8">
-                    <div className="text-left w-1/3">
-                        <div className="text-2xl font-bold text-white ">
-                            Titre
+                <div className=" grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-2 gap-2 p-8">
+                    <div className="text-left w-full lg:w-1/2">
+                        <div className="text-3xl font-bold text-white mb-4">
+                            Contact
                         </div>
-                        <p className="text-2xl font-medium text-white">
-                            Lorem ipsum dolor sit amet.
+                        <p className="text-2xl font-normal text-white">
+                            Abidjan, Cocody en face de l'église St-Jean
                         </p>
                     </div>
-                    <div className="text-left w-1/2">
-                        <div className="text-2xl font-bold text-white text-left">
-                            Titre
+                    <div className="text-left w-full lg:w-auto">
+                        <div className="text-3xl font-bold text-white text-left flex mb-2 align-baseline">
+                            
+                            <Phone size={32}/>
+                             <div> &nbsp;: +225 07070707</div>
                         </div>
-                        <p>
-                            Lorem ipsum dolor sit amet.
-                        </p>
+                        <div className="text-3xl font-bold text-white text-left flex align-baseline">
+                            
+                            <Mail size={40}/>
+                             <div> &nbsp; : contact@saveur-africaine.ci</div>
+                        </div>
                     </div>
-                    <div className="text-left w-1/3">
-                        <div className="text-2xl font-bold text-white text-left">
-                            Titre
+                    <div className="text-left w-full lg:w-1/2">
+                        <div className="text-3xl font-bold text-white text-left  mb-4">
+                            Suivez nous
                         </div>
-                        <p>
-                            Lorem ipsum dolor sit amet.
-                        </p>
+                        <div className="text-2xl font-light text-white text-left">
+                            <ul className="list-none">
+                                <li className="">Facebook</li>
+                                <li className="">Instagram</li>
+                                <li className="">Whatsapp</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div className="text-left w-1/2">
-                        <div className="text-2xl font-bold text-white text-left">
-                            Titre
+                    <div className="text-left w-full lg:w-1/2">
+                        <div className="mb-4 text-3xl font-bold text-white text-left">
+                            Horaires
                         </div>
-                        <p>
-                            Lorem ipsum dolor sit amet.
-                        </p>
+                        <div className="grid grid-cols-2">
+                            <div className="text-2xl font-light text-white text-left ">
+                                <div className="mb-2 font-normal">Dejeuner</div>
+
+                                <ul className="list-none font-light">
+                                    <li className="">Lundi au Dimanche</li>
+                                    <li className="">10h à 15h</li>
+                                </ul>
+                            </div>
+                            <div className="text-2xl text-white text-left ">
+                                <div className="mb-2 font-normal">Diner</div>
+
+                                <ul className="list-none font-light">
+                                    <li className="">Lundi au Dimanche</li>
+                                    <li className="">17h à 23h</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
