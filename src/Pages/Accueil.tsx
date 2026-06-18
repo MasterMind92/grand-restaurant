@@ -3,29 +3,9 @@ import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import { Plat } from "../components/Plat";
 import { Encart } from "../Layouts/Encart";
-// import Masonry from "../component/Masonry";
+import Masonry from "../component/Masonry";
+import { items } from "../data/masonry";
 
-// const items = [
-//     {
-//       id: "1",
-//       img: "https://picsum.photos/id/1015/600/900?grayscale",
-//       url: "https://example.com/one",
-//       height: 400,
-//     },
-//     {
-//       id: "2",
-//       img: "https://picsum.photos/id/1011/600/750?grayscale",
-//       url: "https://example.com/two",
-//       height: 250,
-//     },
-//     {
-//       id: "3",
-//       img: "https://picsum.photos/id/1020/600/800?grayscale",
-//       url: "https://example.com/three",
-//       height: 600,
-//     },
-//     // ... more items
-// ];
 
 
 
@@ -109,12 +89,13 @@ export default function Accueil(){
                     </div>
                 </div>
             </Encart>
-                <div className="py-10"></div>
+                <div className="md:py-10"></div>
             <Encart>
+                <div className="hidden sm:block">
                     <div className="text-white text-lg font-extrabold"> Faites la cuisine pas la guerre</div>
-                    <h1 className='text-white text-6xl font-extrabold '>NOTRE GALERIE</h1>
+                    <div className='text-white text-6xl font-extrabold '>NOTRE GALERIE</div>
                     
-                    {/* <div className="py-80">
+                    <div className="sm:h-200 md:h-200 lg:h-150 py-25 w-full px-4">
                         <Masonry
                         items={items}
                         ease="power3.out"
@@ -126,7 +107,8 @@ export default function Accueil(){
                         blurToFocus
                         colorShiftOnHover={false}
                         />
-                    </div> */}
+                    </div>
+                </div>
 
             </Encart>
             

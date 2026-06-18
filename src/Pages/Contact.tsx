@@ -4,6 +4,8 @@ import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import { Encart } from "../Layouts/Encart";
 import { Phone, Mail } from 'lucide-react';
+import Masonry from "../component/Masonry";
+import { items } from "../data/masonry";
 
 export default function Contact(){
 
@@ -98,6 +100,7 @@ export default function Contact(){
 
             </Encart>
 
+
             <Encart>
                 <div id="parallax" className="bg-[url(/img/image-2-darken.png)]  bg-center bg-cover bg-fixed py-30 flex justify-center">
                     <div className="w-5/6 flex justify-start xl:justify-end">
@@ -106,6 +109,28 @@ export default function Contact(){
                         </div>
                     </div>
                 </div>
+            </Encart>
+
+            <Encart>
+                <div className="hidden sm:block">
+                    <div className="text-white text-lg font-extrabold"> Faites la cuisine pas la guerre</div>
+                    <div className='text-white text-6xl font-extrabold '>NOTRE GALERIE</div>
+                    
+                    <div className="sm:h-[800px] md:h-[800px] lg:h-[600px] py-25 w-full px-4">
+                        <Masonry
+                            items={items}
+                            ease="power3.out"
+                            duration={1.2}
+                            stagger={0.05}
+                            animateFrom="bottom"
+                            scaleOnHover
+                            hoverScale={0.95}
+                            blurToFocus
+                            colorShiftOnHover={false}
+                        />
+                    </div>
+                </div>
+
             </Encart>
 
             <Footer/>

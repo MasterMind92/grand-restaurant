@@ -4,6 +4,8 @@ import { Card } from "../components/Card";
 import { Footer } from "../components/Footer";
 import { Navigation } from "../components/Navigation";
 import { Encart } from "../Layouts/Encart";
+import Masonry from "../component/Masonry";
+import { items } from "../data/masonry";
 
 
 
@@ -25,7 +27,7 @@ export default function Apropos(){
                         <div className="text-white text-3xl">
                             plus de gout pour moins
                         </div>
-                        <div className="text-white text-8xl font-extrabold py-4">
+                        <div className="text-white text-5xl lg:text-8xl font-extrabold py-4">
                             Bonne nourriture, <br /> Bonne ambiance
                         </div>
                     </div>
@@ -57,7 +59,7 @@ export default function Apropos(){
             <Encart>
                 <div id="parallax" className="bg-[url(/img/image-2-darken.png)]  bg-center bg-cover bg-fixed py-30 flex justify-center">
                     <div className="w-5/6 flex justify-center xl:justify-end">
-                        <div className="w-1/2 ">
+                        <div className="w-full lg:w-1/2 ">
                             <CallToAction soustitre="La spécialité du chef" titre="LE STEAK A POINT" text="Normal que ce soit sa specialite c'est ce qu'il aime manger le plus" btnlib="Commander" btnlink="#"/>
                         </div>
                     </div>
@@ -68,7 +70,7 @@ export default function Apropos(){
                 <div className="py-4">
                     {/* <h1 className="text-white text-2xl font-bold">A LA UNE</h1> */}
                     <div className="text-white text-lg font-extrabold"> Faites la cuisine pas la guerre</div>
-                    <h1 id="Carte" className='text-white text-6xl font-extrabold'>A LA UNE</h1>
+                    <div id="Carte" className='text-white text-6xl font-extrabold'>A LA UNE</div>
                     
                 </div>
                 <div className="flex flex-col md:flex-row md:justify-center ">
@@ -85,7 +87,27 @@ export default function Apropos(){
             </Encart>
             <div className="py-8 lg:py-10"></div>
             
-            
+            <Encart>
+                <div className="hidden sm:block">
+                    <div className="text-white text-lg font-extrabold"> Faites la cuisine pas la guerre</div>
+                    <div className='text-white text-6xl font-extrabold '>NOTRE GALERIE</div>
+                    
+                    <div className="sm:h-200 md:h-200 lg:h-150 py-25 w-full px-4">
+                        <Masonry
+                            items={items}
+                            ease="power3.out"
+                            duration={1.2}
+                            stagger={0.05}
+                            animateFrom="bottom"
+                            scaleOnHover
+                            hoverScale={0.95}
+                            blurToFocus
+                            colorShiftOnHover={false}
+                        />
+                    </div>
+                </div>
+
+            </Encart>
             <Encart>
                 <Footer />
             </Encart>
