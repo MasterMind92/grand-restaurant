@@ -12,7 +12,7 @@ export function Header(){
         <header 
       id='header-wrapper'
       className="w-full 
-      bg-[url('/img/image-5-darken.png')]
+      bg-[url('/img/restau-01.jpeg')]
       bg-cover bg-center
       border-12 border-[#ca9c5e]
       h-lvh
@@ -24,20 +24,22 @@ export function Header(){
           <div className="flex flex-row justify-center py-10">
             <div className="mx-auto md:w-3/4 lg:w-1/2 px-10">
 
-              <CallToAction 
-              soustitre="Sous-titre" 
-              titre="Grand titre" 
-              text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo repudiandae odio amet ratione quae sunt." 
-              btnlib="EN SAVOIR PLUS" 
-              btnlink='#' />
+              {/* <CallToAction 
+              soustitre="" 
+              titre="" 
+              text="Toute la saveur des plats Africains à déguster découvrir un cadre convivial et une ambiance chaleureuse." 
+              btnlib="" 
+              btnlink='#' /> */}
 
-                {/* <div className="text-2xl text-[#ca9c5e] font-bold py-2">Sous-titre</div>
-                <div className="text-6xl text-white py-2 font-extrabold ">Grand titre</div>
-                <p className="text-lg text-white py-2 ">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo repudiandae odio amet ratione quae sunt.
-                </p>
+                <div className="text-2xl text-[#ca9c5e] font-bold py-2"></div>
+                <div className="text-2xl text-white py-2 font-extrabold pt-40">
+                  Toute la saveur des plats Africains à déguster découvrir un cadre convivial et une ambiance chaleureuse.
+                </div>
+                {/* <p className="text-xl text-white py-2 ">
+                 Toute la saveur des plats Africains à déguster découvrir un cadre convivial et une ambiance chaleureuse.
+                </p> */}
 
-                <Button text="" link="#"/> */}
+                {/* <Button text="" link="#"/> */}
             </div>
         </div>
         </Encart>

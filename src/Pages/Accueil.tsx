@@ -11,6 +11,7 @@ import { items } from "../data/masonry";
 
 
 
+
 export default function Accueil(){
 
     return (
@@ -19,15 +20,18 @@ export default function Accueil(){
             <div className="py-8 lg:py-10"></div>
             <Encart>
                 <div className="flex flex-col md:flex-row justify-center xl:justify-start px-8">
-                    <div className="md:w-1/2 p-4 ">
-                        <img src="/img/image-3.jpg" alt="" />
+                    <div className=" md:w-1/3 overflow-clip p-4 ">
+                        <img src="/img/image-7.jpg" className="h-[28rem]" alt="" />
                     </div>
-                    <div className="md:w-1/2 p-4 text-left flex flex-row">
-                    <div className="content-center">
-                        <div className="text-white text-2xl">Lorem ipsum dolor sit amet </div>
-                        <div className="text-[#ca9c5e] oleo-script-regular font-light text-2xl md:text-4xl lg:text-5xl transition ease-in-out py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, accusantium. Officiis animi saepe pariatur nihil.</div>
+                    <div className="md:w-2/3 p-4 text-left flex flex-row">
+                        <div className="content-center">
+                            <div className="text-white text-2xl">POULET MARINÉ AUX ÉPICE LOCALES </div>
+                            <div className="text-white text-xl">La rencontre entre l’Asie et l'Afrique </div>
+                            <div className="text-[#ca9c5e] oleo-script-regular font-light text-2xl md:text-3xl lg:text-4xl transition ease-in-out py-2">
+                                *Du Poulet sauté, <br /> *Des épices 100% africaines pour la marinade <br /> *Du riz cantonais préparé façon japonaise
+                            </div>
 
-                    </div>
+                        </div>
                     </div>
                 </div>
             </Encart>
@@ -46,10 +50,11 @@ export default function Accueil(){
             <div className="py-8 lg:py-12"></div>
             <Encart>
                     <div className="text-white text-lg font-extrabold"> Faites la cuisine pas la guerre</div>
-                    <h1 id="Carte" className='text-white text-6xl font-extrabold'>Notre Menu</h1>
+                    <div id="Carte" className='text-white text-6xl font-extrabold'>Notre Menu</div>
                     
                     <div className="flex  flex-col items-center xl:flex-row xl:justify-center px-2 gap-4 lg:gap-16 lg:py-8">
                         <div className="w-3/4   xl:w-1/3 ">
+                            
                             <Plat 
                             titre='Nos Plats à Partager' 
                             libelle='Grilladass Grando' 

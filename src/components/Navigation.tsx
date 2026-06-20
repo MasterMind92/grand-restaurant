@@ -2,6 +2,7 @@ import { useState } from 'react'
 import NavButtons from "./NavButtons"
 import SocialLink from './SocialLink';
 import { faFacebook, faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { Link } from 'react-router-dom';
 
 
 export function Navigation(){
@@ -21,7 +22,9 @@ export function Navigation(){
                     <div className="flex flex-row w-full justify-between">
 
                     <div className="text-xl font-extrabold order-1">
-                        Brand name
+                        <Link to="accueil">
+                            SAVEURS COTIERES ET AFRICAINES
+                        </Link>
                     </div>
                     <div className="hidden md:block order-2 md:order-2">
                         <div className="flex ml-10 items-baseline space-x-2">

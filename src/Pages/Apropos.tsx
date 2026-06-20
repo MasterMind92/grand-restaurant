@@ -1,6 +1,5 @@
 
 import CallToAction from "../components/CallToAction";
-import { Card } from "../components/Card";
 import { Footer } from "../components/Footer";
 import { Navigation } from "../components/Navigation";
 import { Encart } from "../Layouts/Encart";
@@ -16,7 +15,7 @@ export default function Apropos(){
             {/* <Header image="/img/image-2.png"/> */}
 
             <div className="w-full 
-                bg-[url('/img/restau-01.jpeg')]
+                bg-[url('/img/image-5-darken.png')]
                 bg-cover bg-center
                 border-12 border-[#ca9c5e]
                 h-lvh
@@ -38,18 +37,29 @@ export default function Apropos(){
             <div className="py-4 lg:py-8"></div>
             <Encart>
                 <div className="text-center text-white">
-                    <h4 className="text-2xl">Sous titre</h4>
-                    <div className="text-6xl p-2 pb-8">Grand Titre</div>
+                    <h4 className="text-2xl"></h4>
+                    <div className="text-6xl p-2 pb-8">A PROPOS DE NOUS</div>
                 </div>
                 <div className="flex flex-col md:flex-row gap-8 p-4 justify-center">
-                    <div className=" w-full md:w-1/3">
+                    <div className=" w-full md:w-1/3 grid grid-cols-1 grid-rows-2 gap-4">
                         <img src="/img/restau-01.jpeg" alt="" />
+                        <img src="/img/restau-02.jpeg" alt="" />
                     </div>
-                    <div className="text-2xl text-white text-left w-full md:w-1/3">
+                    <div className="text-lg text-white text-left w-full md:w-1/3">
                         
                         <p className="py-2">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ducimus exercitationem, laboriosam voluptatem in eaque, non quisquam veritatis optio quas nemo molestias totam eos laudantium!
+                            Saveurs Côtières et Africaines est un restaurant-boutique où l’élégance, l’authenticité et l’art de vivre africain se rencontrent.
                         </p>
+                        <p className="py-2">
+                            Inspiré par les plus belles saveurs des côtes africaines, notre établissement propose une expérience gastronomique raffinée dans un cadre chic, intimiste et contemporain. Ici, chaque détail compte : une sélection rigoureuse des produits, une cuisine généreuse sublimée avec finesse et un service pensé pour offrir à chaque client un moment privilégié.
+                        </p>
+                        <p className="py-2">
+                            Plus qu’un restaurant, Saveurs Côtières et Africaines est une adresse de caractère, un lieu où l’on vient découvrir une Afrique moderne, élégante et pleine de saveurs. Que ce soit pour un déjeuner d’affaires, un dîner entre amis ou une occasion spéciale, nous vous invitons à vivre une expérience unique où qualité, convivialité et excellence se retrouvent dans chaque assiette.
+                        </p>
+                        <p className="py-2">
+                            Une cuisine authentique. Un cadre raffiné. Une expérience exclusive.
+                        </p>
+                        
                     </div>
 
                 </div>
@@ -66,9 +76,9 @@ export default function Apropos(){
                 </div>
             </Encart>
             <div className="py-8 lg:py-4"></div>
-            <Encart>
+            {/* <Encart>
                 <div className="py-4">
-                    {/* <h1 className="text-white text-2xl font-bold">A LA UNE</h1> */}
+                    <h1 className="text-white text-2xl font-bold">A LA UNE</h1> 
                     <div className="text-white text-lg font-extrabold"> Faites la cuisine pas la guerre</div>
                     <div id="Carte" className='text-white text-6xl font-extrabold'>A LA UNE</div>
                     
@@ -84,8 +94,8 @@ export default function Apropos(){
                         <Card />
                     </div>
                 </div>
-            </Encart>
-            <div className="py-8 lg:py-10"></div>
+            </Encart> */}
+            {/* <div className="py-8 lg:py-10"></div> */}
             
             <Encart>
                 <div className="hidden sm:block">
