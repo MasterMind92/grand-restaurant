@@ -1,6 +1,5 @@
 import { Navigation } from './Navigation'
 import { Encart } from '../Layouts/Encart'
-import CallToAction from './CallToAction';
 
 
 
