@@ -92,7 +92,7 @@ export default function Accueil() {
                 <div className="flex flex-col items-center xl:flex-row xl:justify-center px-2 gap-4 lg:gap-5 lg:pt-8 pb-2">
                     <div className="w-3/4 xl:w-1/4">
                         <Plat
-                            image="../public/img/entrees.jpg"
+                            image="/img/entrees.jpg"
                             titre=""
                             libelle="Salade Crudités"
                             prix="4 000"
@@ -107,7 +107,7 @@ export default function Accueil() {
 
                      <div className="w-3/4 xl:w-1/4">
                         <Plat
-                            image="../public/img/entrees.jpg"
+                            image="/img/entrees.jpg"
                             titre=""
                             libelle="Salade Crudités"
                             prix="4 000"
@@ -127,7 +127,7 @@ export default function Accueil() {
 
                      <div className="w-3/4 xl:w-1/4">
                         <Plat
-                            image="../public/img/entrees.jpg"
+                            image="/img/entrees.jpg"
                             titre=""
                             libelle="Salade Crudités"
                             prix="4 000"
@@ -142,7 +142,7 @@ export default function Accueil() {
 
                      <div className="w-3/4 xl:w-1/4">
                         <Plat
-                            image="../public/img/entrees.jpg"
+                            image="/img/entrees.jpg"
                             titre=""
                             libelle="Salade Crudités"
                             prix="4 000"
