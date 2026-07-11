@@ -6,7 +6,7 @@ import { Encart } from "../Layouts/Encart";
 import Masonry from "../component/Masonry";
 import { items } from "../data/masonry";
 import { Plats } from "../components/Plats";
-import PlatBis from "../components/PlatBis";
+// import PlatBis from "../components/PlatBis";
 import { Plat } from "../components/Plat";
 
 
@@ -95,7 +95,7 @@ export default function Accueil() {
                 <div className="flex flex-col items-center xl:flex-row xl:justify-center px-2 gap-4 lg:gap-5 lg:pt-8 pb-2">
                     <div className="w-3/4 xl:w-1/4">
                         <Plat
-                            image="/img/entrees.jpg"
+                            image="/img/reel/apero-2.jpg"
                             titre=""
                             libelle="Salade Crudités"
                             prix="4 000"
@@ -110,7 +110,7 @@ export default function Accueil() {
 
                      <div className="w-3/4 xl:w-1/4">
                         <Plat
-                            image="/img/entrees.jpg"
+                            image="/img/reel/soupe-pecheur.jpg"
                             titre=""
                             libelle="Salade Crudités"
                             prix="4 000"
@@ -130,7 +130,7 @@ export default function Accueil() {
 
                      <div className="w-3/4 xl:w-1/4">
                         <Plat
-                            image="/img/entrees.jpg"
+                            image="/img/reel/apero-1.jpg"
                             titre=""
                             libelle="Salade Crudités"
                             prix="4 000"
@@ -145,7 +145,7 @@ export default function Accueil() {
 
                      <div className="w-3/4 xl:w-1/4">
                         <Plat
-                            image="/img/entrees.jpg"
+                            image="/img/reel/plat-complet.jpg"
                             titre=""
                             libelle="Salade Crudités"
                             prix="4 000"
@@ -281,7 +281,7 @@ export default function Accueil() {
                 </div>
             </Encart>
 
-            <Encart>
+            {/* <Encart>
                 
                 <div className="grid grid-cols-2 grid-row-2 gap-4">
                     <div className="">
@@ -300,7 +300,7 @@ export default function Accueil() {
                     </div>
                 </div>
                 
-            </Encart>
+            </Encart> */}
             
 
             <Encart>
