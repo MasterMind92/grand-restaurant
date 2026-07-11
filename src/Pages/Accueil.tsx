@@ -2,11 +2,14 @@ import { Button } from "../components/Button";
 import CallToAction from "../components/CallToAction";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
-import { Plat } from "../components/Plat";
-import { Plats } from "../components/Plats";
 import { Encart } from "../Layouts/Encart";
 import Masonry from "../component/Masonry";
 import { items } from "../data/masonry";
+import { Plats } from "../components/Plats";
+import PlatBis from "../components/PlatBis";
+import { Plat } from "../components/Plat";
+
+
 
 
 
@@ -203,7 +206,7 @@ export default function Accueil() {
                     prix="5 000"
                 />
             </div>
-</div>
+        </div>
           
             <Encart>
                 <div
@@ -276,6 +279,27 @@ export default function Accueil() {
                     colorShiftOnHover={false}
                     />
                 </div>
+            </Encart>
+
+            <Encart>
+                
+                <div className="grid grid-cols-2 grid-row-2 gap-4">
+                    <div className="">
+                        <PlatBis />
+                    </div>
+                    <div className="">
+                        <PlatBis />
+                    </div>
+                    <div className="">
+                        <PlatBis />
+                        
+                    </div>
+                    <div className="">
+                        <PlatBis />
+
+                    </div>
+                </div>
+                
             </Encart>
             
 
