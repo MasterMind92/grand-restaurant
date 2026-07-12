@@ -12,8 +12,8 @@ export function Header(){
         <header 
       id='header-wrapper'
       className="w-full 
-      bg-[url('/img/banniere2.jpg')]
-      bg-cover bg-center
+      bg-[url('/img/restau-01.jpeg')]
+      bg-cover bg-bottom
       border-0 border-[#0FF]
       h-lvh
       "

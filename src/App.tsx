@@ -4,6 +4,9 @@ import { BrowserRouter,Route, Routes } from 'react-router-dom'
 import Accueil from './Pages/Accueil'
 import Apropos from './Pages/Apropos'
 import Contact from './Pages/Contact'
+import Menus from './Pages/Menus'
+import Reservations from './Pages/Reservations'
+
 // import { useState, useEffect } from 'react'
 
 
@@ -39,6 +42,8 @@ function App() {
         <Routes>
             <Route path="/" element={<Accueil />} />
             <Route path="/accueil" element={<Accueil />} />
+            <Route path="/menus" element={<Menus />} />
+            <Route path="/reservation" element={<Reservations />} />
             <Route path="/apropos" element={<Apropos />} />
             <Route path="/contact" element={<Contact />} />
         </Routes>

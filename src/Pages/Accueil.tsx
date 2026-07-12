@@ -22,10 +22,19 @@ export default function Accueil() {
         <>
             <Header />
 
+             <div className="relative ">
+                    <div className="absolute" style={{right: "3.8%", top: '-100px',transform:"scale(1.7)"}}>
+                        <img src="/img/deco/plante-3.png" alt="" />
+                    </div>
+                    <div className="absolute" style={{top: '-100px', transform:"scale(1.25)"}}>
+                        <img src="/img/deco/plante-2.png" alt="" />
+                    </div>
+            </div>
+
             <Encart>
                 <div className="flex flex-col md:flex-row justify-center xl:justify-start pt-6">
                     <div className="md:w-1/2 p-4 pl-20">
-                        <img src="/img/apropos.jpg" alt="" />
+                        <img src="/img/image-7.jpg" alt="" />
                     </div>
 
                     <div className="md:w-1/2 p-5 text-left flex flex-row pl-10 pr-20">
@@ -74,6 +83,8 @@ export default function Accueil() {
             */}
 
             <div className="py-8 lg:py-12"></div>
+
+           
 
             <Encart>
                 <div
