@@ -14,7 +14,7 @@ export function Navigation(){
             
             <nav className='text-white 
             w-full bg-[#ca9c5e]
-            md:bg-gray-500/20'>
+            lg:bg-gray-500/20'>
             <div className='max-w-7xl mx-auto 
             px-4 sm:px-6 lg:px-8
             '>
@@ -23,17 +23,20 @@ export function Navigation(){
 
                     <div className="text-xl font-extrabold order-1">
                         <Link to="accueil">
-                            SAVEURS COTIERES ET AFRICAINES
+                            <img className="hidden lg:inline" src="/img/logo-saveurs.png" style={{height:"100px"}} alt=""  />
+                            <img className="lg:hidden" src="/img/logo-saveurs-blanc.png" style={{height:"100px"}} alt=""  />
                         </Link>
                     </div>
-                    <div className="hidden md:block order-2 md:order-2">
-                        <div className="flex ml-10 items-baseline space-x-2">
-                        <NavButtons/>
+                    <div className="hidden lg:block order-2 lg:order-2">
+                        <div className="flex ml-10 content-center space-x-2">
+                            <div className="py-8">
+                                <NavButtons/>
+                            </div>
                         </div>
 
                     </div>
-                    <div className="block items-center md:items-end order-2">
-                        <div className="flex ml-10 items-baseline space-x-2">
+                    <div className="block items-center lg:items-end order-2">
+                        <div className="flex ml-10 items-baseline space-x-2 py-8">
                         <SocialLink colored={false} link="http://facebook.com" icon={faFacebook} />
                         <SocialLink colored={false} link="http://instagram.com" icon={faInstagram} />
                         <SocialLink colored={false} link="http://whatsapp.com" icon={faWhatsapp} />
@@ -42,7 +45,7 @@ export function Navigation(){
                     </div>
 
                     </div>
-                    <div className='md:hidden'>
+                    <div className='lg:hidden'>
                         <button type="button" onClick={()=>{setIsOpen(!isOpen)}}>
                         <svg 
                         xmlns="http://www.w3.org/2000/svg" 
@@ -68,7 +71,7 @@ export function Navigation(){
                 isOpen &&(
                 <div className="
                 flex flex-col gap-y-2 
-                md:hidden px-4 
+                lg:hidden px-4 
                 sm:px-6 pb-2 
                 bg-[#ca9c5e]" >
                     <NavButtons/>

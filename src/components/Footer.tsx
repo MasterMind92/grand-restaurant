@@ -9,7 +9,7 @@ export function Footer(){
             <div className="flex flex-col md:flex-row justify-center flex-wrap">
                 <div className="w-full md:w-1/3 flex justify-center items-center">
                     <div className="">
-                        LOGO
+                        <img className="hidden lg:inline" src="/img/logo-saveurs.png" style={{height:"100px"}} alt=""  />
                     </div>
                 </div>
                 <div className="w-full md:w-1/3 md:border-l-2 md:border-r-2 lg:border-[#ca9c5e] py-8 md:py-0">

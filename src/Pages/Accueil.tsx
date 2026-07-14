@@ -5,9 +5,10 @@ import { Header } from "../components/Header";
 import { Encart } from "../Layouts/Encart";
 import Masonry from "../component/Masonry";
 import { items } from "../data/masonry";
-import { Plats } from "../components/Plats";
+// import { Plats } from "../components/Plats";
 // import PlatBis from "../components/PlatBis";
 import { Plat } from "../components/Plat";
+import { MenuItem } from "../components/MenuItem";
 
 
 
@@ -43,7 +44,7 @@ export default function Accueil() {
                                 Notre restaurant
                             </div>
 
-                            <div className="text-[#ca9c5e] py-10 oleo-script-regular font-light text-1xl md:text-1xl lg:text-1xl transition ease-in-out">
+                            <div className="text-[#ca9c5e] py-10 oleo-script-regular font-light text-2xl md:text-1xl lg:text-1xl transition ease-in-out">
                                 Saveurs Côtières & Africaines valorise le patrimoine
                                 gastronomique africain à travers des recettes authentiques,
                                 des ingrédients soigneusement sélectionnés et un accueil
@@ -179,45 +180,109 @@ export default function Accueil() {
                 id="Carte"
                 className="text-white text-4xl font-extrabold uppercase mb-4"
             >
-                Nos grillades
-            </div>
-<div className="mx-auto w-4/4">
-
-  <div className="w-3/4 mx-auto  ">
-                <Plats
-                    libelle="Poisson Braisé aux Épices du Continent"
-                    prix="6 000 / 7 000 / 12 000"
-                />
+                Nos Menus
             </div>
 
-            <div className="w-3/4 mx-auto mt-0">
-                <Plats
-                    libelle="Poulet Braisé Maguida"
-                    prix="5 000 / 8 000"
-                />
+            <div className="w-full mx-auto p-8">
+
+                <div className="flex flex-col items-center xl:flex-row xl:justify-center px-2 gap-4 lg:gap-8 lg:py-4">
+
+                    <div className="w-1/2 mx-auto">
+                        <MenuItem 
+                            highlight=""
+                            titre="Nos entrees"
+                            libelle="Attieke Poisson"
+                            prix="2500"
+                            ingredient={["Attieke","Piment","Poisson"]}
+                        />
+                    </div>
+
+                    <div className="w-1/2 mx-auto">
+                        <MenuItem 
+                            highlight=""
+                            titre="Nos plats traditionnels"
+                            libelle="Attieke Poisson"
+                            prix="2500"
+                            ingredient={["Attieke","Piment","Poisson"]}
+                        />
+                    </div>
+                    
+                </div>
+
+                <div className="flex  flex-col items-center xl:flex-row xl:justify-center px-2 gap-4 lg:gap-8 lg:py-4">
+
+                    <div className="w-1/2 mx-auto">
+                        <MenuItem 
+                            highlight=""
+                            titre=""
+                            libelle="Attieke Poisson"
+                            prix="2500"
+                            ingredient={["Attieke","Piment","Poisson"]}
+                        />
+                    </div>
+
+                    <div className="w-1/2 mx-auto">
+                        <MenuItem 
+                            highlight=""
+                            titre=""
+                            libelle="Attieke Poisson"
+                            prix="2500"
+                            ingredient={["Attieke","Piment","Poisson"]}
+                        />
+                    </div>
+                    
+                </div>
+
+                <div className="flex  flex-col items-center xl:flex-row xl:justify-center px-2 gap-4 lg:gap-8 lg:py-4">
+
+                    <div className="w-1/2 mx-auto">
+                        <MenuItem 
+                            highlight="Nouveau"
+                            titre=""
+                            libelle="Attieke Poisson"
+                            prix="2500"
+                            ingredient={["Attieke","Piment","Poisson"]}
+                        />
+                    </div>
+
+                    <div className="w-1/2 mx-auto">
+                        <MenuItem 
+                            highlight="Nouveau"
+                            titre=""
+                            libelle="Attieke Poisson"
+                            prix="2500"
+                            ingredient={["Attieke","Piment","Poisson"]}
+                        />
+                    </div>
+                    
+                </div>
+
+                <div className="flex  flex-col items-center xl:flex-row xl:justify-center px-2 gap-4 lg:gap-8 lg:py-4">
+
+                    <div className="w-1/2 mx-auto">
+                        <MenuItem 
+                            highlight=""
+                            titre=""
+                            libelle="Attieke Poisson"
+                            prix="2500"
+                            ingredient={["Attieke","Piment","Poisson"]}
+                        />
+                    </div>
+
+                    <div className="w-1/2 mx-auto">
+                        <MenuItem 
+                            highlight=""
+                            titre=""
+                            libelle="Attieke Poisson"
+                            prix="2500"
+                            ingredient={["Attieke","Piment","Poisson"]}
+                        />
+                    </div>
+                    
+                </div>
+            
             </div>
 
-            <div className="w-3/4 mx-auto mt-0">
-                <Plats
-                    libelle="Porc Braisé Façon Africaine"
-                    prix="6 000"
-                />
-            </div>
-
-            <div className="w-3/4 mx-auto mt-0">
-                <Plats
-                    libelle="Brochettes de Bœuf"
-                    prix="5 000"
-                />
-            </div>
-
-            <div className="w-3/4 mx-auto mt-0">
-                <Plats
-                    libelle="Brochettes d'Escargots"
-                    prix="5 000"
-                />
-            </div>
-        </div>
           
             <Encart>
                 <div
@@ -248,7 +313,7 @@ export default function Accueil() {
                                 Nous contacter
                             </div>
 
-                            <div className="text-[#ca9c5e] py-10 oleo-script-regular font-light text-1xl md:text-1xl lg:text-1xl transition ease-in-out ">
+                            <div className="text-[#ca9c5e] py-10 oleo-script-regular font-light text-2xl md:text-1xl lg:text-1xl transition ease-in-out ">
                                 Envie de découvrir les saveurs authentiques de l’Afrique dans une ambiance chaleureuse ? Contactez Saveurs Côtières & Africaines dès aujourd’hui et laissez-nous transformer vos repas en moments uniques de partage et de plaisir.
                             </div>
 
