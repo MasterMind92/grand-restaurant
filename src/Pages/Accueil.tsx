@@ -185,101 +185,75 @@ export default function Accueil() {
 
             <div className="w-full mx-auto p-8">
 
-                <div className="flex flex-col items-center xl:flex-row xl:justify-center px-2 gap-4 lg:gap-8 lg:py-4">
 
-                    <div className="w-1/2 mx-auto">
+
+                <div className="flex flex-col items-center lg:flex-row xl:justify-center px-2 gap-4 lg:gap-8 lg:py-4">
+
+                    <div className="w-full lg:w-1/2 grid grid-rows-1 gap-4">
                         <MenuItem 
                             highlight=""
-                            titre="Nos entrees"
-                            libelle="Attieke Poisson"
-                            prix="2500"
-                            ingredient={["Attieke","Piment","Poisson"]}
+                            titre="Nos Entrees"
+                            libelle="Salade exotique"
+                            prix="3500"
+                            ingredient={["Salade exotique","Légume croquant","pain à l’ail"]}
                         />
+
+                        <MenuItem 
+                            highlight=""
+                            titre=""
+                            libelle="Nid d’avocats"
+                            prix="4000"
+                            ingredient={["Avocat farcis","Effilochés de poulet","légumes de saison"]}
+                        />
+
+                        
                     </div>
 
-                    <div className="w-1/2 mx-auto">
+                    <div className="w-full lg:w-1/2 grid grid-rows-1 gap-4">
+                        <MenuItem 
+                            highlight=""
+                            titre="Nos Grillades"
+                            libelle="Poulet braisé"
+                            prix="5000"
+                            ingredient={["Poulet","Sauce basquaise","Poisson"]}
+                        />
+
+                        <MenuItem 
+                            highlight=""
+                            titre=""
+                            libelle="Poissons le continent"
+                            prix="5000"
+                            ingredient={["Poisson","Marinade d'épices","Poisson"]}
+                        />
+
+                        
+                    </div>
+                    
+                </div>
+                
+                <div className="flex flex-col items-center lg:flex-row xl:justify-center px-2 gap-4 lg:gap-8 lg:py-4">
+
+                    <div className="w-full lg:w-1/2 grid grid-rows-1 gap-4">
                         <MenuItem 
                             highlight=""
                             titre="Nos plats traditionnels"
-                            libelle="Attieke Poisson"
-                            prix="2500"
-                            ingredient={["Attieke","Piment","Poisson"]}
+                            libelle="Sauce graine Akan"
+                            prix="3500"
+                            ingredient={["Sauce à base de noix de palme","Viande de bœuf","Poisson fumé"]}
                         />
-                    </div>
-                    
-                </div>
 
-                <div className="flex  flex-col items-center xl:flex-row xl:justify-center px-2 gap-4 lg:gap-8 lg:py-4">
-
-                    <div className="w-1/2 mx-auto">
                         <MenuItem 
                             highlight=""
                             titre=""
-                            libelle="Attieke Poisson"
-                            prix="2500"
-                            ingredient={["Attieke","Piment","Poisson"]}
+                            libelle="Ndolet Royal"
+                            prix="3000"
+                            ingredient={["Ndolet Arachide","Poisson fumé","Viande de boeuf"]}
                         />
-                    </div>
-
-                    <div className="w-1/2 mx-auto">
-                        <MenuItem 
-                            highlight=""
-                            titre=""
-                            libelle="Attieke Poisson"
-                            prix="2500"
-                            ingredient={["Attieke","Piment","Poisson"]}
-                        />
+                        
                     </div>
                     
                 </div>
-
-                <div className="flex  flex-col items-center xl:flex-row xl:justify-center px-2 gap-4 lg:gap-8 lg:py-4">
-
-                    <div className="w-1/2 mx-auto">
-                        <MenuItem 
-                            highlight="Nouveau"
-                            titre=""
-                            libelle="Attieke Poisson"
-                            prix="2500"
-                            ingredient={["Attieke","Piment","Poisson"]}
-                        />
-                    </div>
-
-                    <div className="w-1/2 mx-auto">
-                        <MenuItem 
-                            highlight="Nouveau"
-                            titre=""
-                            libelle="Attieke Poisson"
-                            prix="2500"
-                            ingredient={["Attieke","Piment","Poisson"]}
-                        />
-                    </div>
-                    
-                </div>
-
-                <div className="flex  flex-col items-center xl:flex-row xl:justify-center px-2 gap-4 lg:gap-8 lg:py-4">
-
-                    <div className="w-1/2 mx-auto">
-                        <MenuItem 
-                            highlight=""
-                            titre=""
-                            libelle="Attieke Poisson"
-                            prix="2500"
-                            ingredient={["Attieke","Piment","Poisson"]}
-                        />
-                    </div>
-
-                    <div className="w-1/2 mx-auto">
-                        <MenuItem 
-                            highlight=""
-                            titre=""
-                            libelle="Attieke Poisson"
-                            prix="2500"
-                            ingredient={["Attieke","Piment","Poisson"]}
-                        />
-                    </div>
-                    
-                </div>
+                
             
             </div>
 

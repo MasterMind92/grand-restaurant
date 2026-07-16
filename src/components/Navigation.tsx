@@ -23,8 +23,7 @@ export function Navigation(){
 
                     <div className="text-xl font-extrabold order-1">
                         <Link to="accueil">
-                            <img className="hidden lg:inline" src="/img/logo-saveurs.png" style={{height:"100px"}} alt=""  />
-                            <img className="lg:hidden" src="/img/logo-saveurs-blanc.png" style={{height:"100px"}} alt=""  />
+                            <img  src="/img/logo-saveurs-blanc.png" style={{height:"100px"}} alt=""  />
                         </Link>
                     </div>
                     <div className="hidden lg:block order-2 lg:order-2">
