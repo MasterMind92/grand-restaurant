@@ -49,7 +49,7 @@ export function Plat({
                     </div>
 
                     <div className="text-[#ca9c5e] font-bold text-xl ml-3 whitespace-nowrap">
-                        {prix} CFA
+                        {prix && (prix +" CFA")} 
                     </div>
                 </div>
 

@@ -33,7 +33,7 @@ export function Plats({
                     </span>
                     <span className="flex-1 border-b border-dotted border-white/40 translate-y-[-4px]" />
                     <span className="text-[#ca9c5e] font-bold text-xl whitespace-nowrap">
-                        {prix} CFA
+                        {prix && (prix +" CFA")} 
                     </span>
                 </div>
             </div>

@@ -95,7 +95,7 @@ export default function Accueil() {
                     Nos entrées
                 </div>
 
-                <div className="text-white text-lg w-4/5 text-center mx-auto">
+                <div className="text-white text-lg w-4/5 text-center mx-auto mb-8">
                     Bienvenue chez Saveurs Côtières & Africaines, votre destination
                     gourmande pour découvrir l’authenticité de la cuisine africaine
                     dans toute sa richesse. Notre restaurant vous invite à vivre une
@@ -109,13 +109,9 @@ export default function Accueil() {
                         <Plat
                             image="/img/reel/apero-2.jpg"
                             titre=""
-                            libelle="Salade Crudités"
+                            libelle="Nid d’avocats"
                             prix="4 000"
-                            ingredient={[
-                                "Laitue",
-                                "Tomates fraîches",
-                                "Concombres",
-                            ]}
+                            ingredient={["Avocat farcis","Effilochés de poulet","légumes de saison"]}
                             highlight="Nouveau"
                         />
                     </div>
@@ -124,12 +120,12 @@ export default function Accueil() {
                         <Plat
                             image="/img/reel/soupe-pecheur.jpg"
                             titre=""
-                            libelle="Salade Crudités"
-                            prix="4 000"
+                            libelle="Marmite du pêcheur"
+                            prix=""
                             ingredient={[
-                                "Laitue",
-                                "Tomates fraîches",
-                                "Concombres",
+                                "Crevettes",
+                                "Crabes",
+                                "Poisson",
                             ]}
                             highlight="Nouveau"
                         />
@@ -144,12 +140,12 @@ export default function Accueil() {
                         <Plat
                             image="/img/reel/apero-1.jpg"
                             titre=""
-                            libelle="Salade Crudités"
-                            prix="4 000"
+                            libelle="Salade exotique"
+                            prix="3 500"
                             ingredient={[
-                                "Laitue",
-                                "Tomates fraîches",
-                                "Concombres",
+                                "Fruit de saison avocat ",
+                                "Légume croquant",
+                                "pain à l’ail",
                             ]}
                             highlight="Nouveau"
                         />
@@ -159,12 +155,11 @@ export default function Accueil() {
                         <Plat
                             image="/img/reel/plat-complet.jpg"
                             titre=""
-                            libelle="Salade Crudités"
-                            prix="4 000"
+                            libelle="Poissons le continent"
+                            prix=""
                             ingredient={[
-                                "Laitue",
-                                "Tomates fraîches",
-                                "Concombres",
+                                "Boissons braisés",
+                                "Marinade au epice",
                             ]}
                             highlight="Nouveau"
                         />
